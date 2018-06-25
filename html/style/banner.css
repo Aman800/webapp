@@ -1,0 +1,32 @@
+<style>
+* {box-sizing:border-box}
+body {
+}
+.mySlides {
+display:none;
+margin: auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+  display: block;
+  margin: 0 auto;
+}
+.img {
+    display: block;
+    margin: 0 auto;
+}
+@-webkit-keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}

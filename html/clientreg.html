@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      	<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+ 		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	
+		<script  src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+
+            <title>Client Details</title>  
+    </head>
+            <body>
+                <h1 align="center" >Invoicing System</h1>
+
+
+                <div class="container">
+
+                    <form id="client_form" class="form-horizontal" action="" method="POST">
+                    <h4>Add Client <small>(Fill up the forms to add client)</small><br><br><br></h4>
+                    <div>
+ <div class="row" class="form-control-group" >
+        <label class="control-label" for="client_id">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Client Id&nbsp;&nbsp;&nbsp;</label>
+ <div class="controls"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input type="text" class="input-xlarge" name="client_id" id="client_id"></div>
+ 
+ <div class="form-control-group">
+     <label class="control-label" for="client_name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Client Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></div>
+ <div class="controls"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input type="text" class="input-xlarge" name="client_name" id="client_name"></div>
+ </div>
+                        <br>  </div>
+                    <div>
+ <div class="row" class="form-control-group" >
+        <label class="control-label" for="location">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Location&nbsp;&nbsp;&nbsp;</label>
+ <div class="controls"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input type="text" class="input-xlarge" name="location" id="location"></div>
+ 
+ <div class="form-control-group">
+     <label class="control-label" for="contact_person">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Person&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></div>
+ <div class="controls"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input type="text" class="input-xlarge" name="contact_person" id="contact_person"></div>
+ </div> 
+                    </div><br>
+                    <div>
+ <div class="row" class="form-control-group" >
+            <label class="control-label" for="address">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<div class="controls"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <textarea class="input-xlarge" name="address" id="address" rows="2"></textarea>
+</div>
+ <div class="form-control-group">
+     <label class="control-label" for="phone_no">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone No.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></div>
+ <div class="controls"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+     <input type="text" class="input-xlarge" name="phone_no" id="phone_no" placeholder="+911234567890"></div>
+ </div>                        
+                    </div>
+                    <div>
+ <div class="row" class="form-control-group" >
+     <label class="control-label" for="city">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+ <div class="controls"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input type="text" class="input-xlarge" name="city" id="city"></div>
+ 
+ <div class="form-control-group">
+     <label class="control-label" for="state">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></div>
+ <div class="controls"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input type="text" class="input-xlarge" name="state" id="state"></div>
+ </div> 
+                    </div><br>
+                    <div>
+ <div class="row" class="form-control-group" >
+        <label class="control-label" for="zip">&nbsp;&nbsp;&nbsp;&nbsp;Zip code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+ <div class="controls"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input type="text" class="input-xlarge" name="zip" id="zip"></div>
+ 
+ <div class="form-control-group">
+     <label class="control-label" for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email-Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></div>
+ <div class="controls"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input type="email" class="input-xlarge" name="email" id="email"></div>
+ </div> 
+                    </div>
+                    <div><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="submit" class="btn btn-success btn-large">Register&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;&nbsp;
+            <button type="reset" class="btn">Reset&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;&nbsp;
+            <button type="cancel" class="btn">&nbsp;&nbsp;&nbsp;Cancel</button></div>
+</form>
+                    
+</div>
+
+<script type="text/javascript">
+ 
+   $(document).ready(function() {
+    $('#reg_form').bootstrapValidator({
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            client_id: {
+                validators: {
+                        stringLength: {
+                        min: 5,
+                    },
+                        notEmpty: {
+                        message: 'Please enter the Client Id'
+                    }
+                }
+            },
+             client_name: {
+                validators: {
+                     stringLength: {
+                        min: 10,
+                    },
+                    notEmpty: {
+                        message: 'Please enter the Client name'
+                    }
+                }
+            },
+           
+            location: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please enter the client''s location '
+                    }
+                    
+                }
+            },
+            address: {
+                validators: {
+                     stringLength: {
+                        min: 8,
+                    },
+                    notEmpty: {
+                        message: 'Please enter client''s address'
+                    }
+                }
+            },
+            city: {
+                validators: {
+                     stringLength: {
+                        min: 4,
+                    },
+                    notEmpty: {
+                        message: 'Please enter city'
+                    }
+                }
+            },
+            state: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please enter  state'
+                    }
+                }
+            },
+            zip: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please enter zip code'
+                    },
+                    zipCode: {
+                        country: 'IND',
+                        message: 'Please enter a vaild zip code'
+                    }
+                }
+            },	
+	 email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your email address'
+                    },
+                    emailAddress: {
+                        message: 'Please supply a valid email address'
+                    }
+                }
+            },
+		
+			
+            
+            }
+        })
+		
+ 	
+        .on('success.form.bv', function(e) {
+            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+                $('#client_form').data('bootstrapValidator').resetForm();
+ 
+            // Prevent form submission
+            e.preventDefault();
+ 
+            // Get the form instance
+            var $form = $(e.target);
+ 
+            // Get the BootstrapValidator instance
+            var bv = $form.data('bootstrapValidator');
+ 
+            // Use Ajax to submit form data
+                });
+});
+ 
+</script>
+        </body>
+</html>
+
